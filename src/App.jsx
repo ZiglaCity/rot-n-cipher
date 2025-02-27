@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import TextInputSection from './components/TextInputSection';
 import ResultSelection from './components/ResultSection';
+import RotSelector from './components/RotSelector';
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -36,7 +37,7 @@ function App() {
           mode={mode}
           setmMode={setMode}
         />
-
+        <RotSelector rotType={rotType} setRotType={setRotType}/>
         <ResultSelection outputText={outputText} mode={mode} />
       </div>
     </>
