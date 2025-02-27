@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TextInputSection from './components/TextInputSection';
 import ResultSelection from './components/ResultSection';
 
@@ -8,6 +8,25 @@ function App() {
   const [mode, setMode] = useState("encrypt"); 
   const [outputText, setOutputText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+
+  const transformText = (text, shift, mode) => {
+    return text
+      .split("")
+      .map((char) => {
+        if (/[a-zA-Z]/.test(char)){
+          let base = char === char.toUpperCase() ? 65 : 97;
+          let shiftValue = mode === "encrypt" ? shift : 26 - shift;
+          return String.fromCharCode(((char.charCodeAt(0) - base + shiftValue) % 26) + base);
+        }
+        return char;
+      })
+      .join("");
+  };
+
+  useEffect(() => {
+    setOutputText(transformText(inputText, rotType, mode));
+  }, [inputText, rotType, mode]);
+
   return (
     <>
       <div>
