@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TextInputSection from './components/TextInputSection';
+import ResultSelection from './components/ResultSection';
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -16,6 +17,8 @@ function App() {
           mode={mode}
           setmMode={setMode}
         />
+
+        <ResultSelection outputText={outputText} mode={mode} />
       </div>
     </>
   )
