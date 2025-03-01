@@ -1,7 +1,9 @@
+import "../styles/global.css";
+
 function TextInputSection( {inputText, setInputText, mode, setmMode }){
     return (
         <>
-            <div>
+            <div className="cyber-container">
                 <select value={mode} onChange={(e) => setmMode(e.target.value)}>
                     <option value="encrypt">Encrypt</option>
                     <option value="decrypt">Decrypt</option>

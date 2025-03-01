@@ -29,6 +29,10 @@ function App() {
     setOutputText(transformText(inputText, rotType, mode));
   }, [inputText, rotType, mode]);
 
+  useEffect(() => {
+    document.body.className = darkMode ? "dark-mode" : "";
+  }, [darkMode]);
+  
   return (
     <>
       <div>
