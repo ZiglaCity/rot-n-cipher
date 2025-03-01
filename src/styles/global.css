@@ -39,14 +39,16 @@ body {
     width: 90%; 
     max-width: 900px; 
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .cyber-container textarea {
     width: 200%;
     height: 150px;
+    max-width: 500px;
     padding: 10px;
-    margin: 5px;
+    margin-top: 10px;
     font-size: 14px;
     background: var(--bg-color);
     color: var(--text-color);
@@ -58,6 +60,7 @@ body {
 
 .cyber-container select {
     width: 100%;
+    max-width: 250px;
     padding: 5px;
     font-size: 14px;
     background: var(--bg-color);
@@ -77,4 +80,22 @@ body {
 .cyber-container select:hover,
 .cyber-container textarea:hover {
     opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .cyber-container {
+        padding: 0px;
+    }
+    .cyber-container select {
+        margin-top: 10px; 
+    }
+    .cyber-container textarea {
+        max-width: 90%;
+        height: 120px;    
+        font-size: 14px;  
+    }
+    body {
+        overflow-y: hidden;
+    }
+
 }
