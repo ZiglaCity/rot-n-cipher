@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import TextInputSection from './components/TextInputSection';
 import ResultSelection from './components/ResultSection';
 import RotSelector from './components/RotSelector';
+import Navbar from './components/Navbar';
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -31,14 +32,24 @@ function App() {
   return (
     <>
       <div>
+        <Navbar 
+          darkMode={darkMode} 
+          setDarkMode={setDarkMode} 
+        />
         <TextInputSection
           inputText={inputText}
           setInputText={setInputText}
           mode={mode}
           setmMode={setMode}
         />
-        <RotSelector rotType={rotType} setRotType={setRotType}/>
-        <ResultSelection outputText={outputText} mode={mode} />
+        <RotSelector 
+          rotType={rotType}
+          setRotType={setRotType} 
+        />
+        <ResultSelection
+         outputText={outputText}
+         mode={mode}
+        />
       </div>
     </>
   )
