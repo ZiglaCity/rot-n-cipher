@@ -15,7 +15,6 @@ function TextInputSection( {inputText, setInputText, mode, setmMode }){
             </div>
         </>
     )
-
 }
 
 export default TextInputSection;
