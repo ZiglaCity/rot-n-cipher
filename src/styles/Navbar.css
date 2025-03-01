@@ -24,6 +24,7 @@ button {
     background: var(--button-bg);
     color: var(--button-text);
     border: none;
+    margin-right: 30px;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
