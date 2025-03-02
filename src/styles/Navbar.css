@@ -2,8 +2,8 @@ nav {
     position: fixed; 
     top: 0;
     left: 0;
-    width: 99%;
-    height: 50px; 
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,10 +25,10 @@ button {
     color: var(--button-text);
     border: none;
     margin-right: 30px;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: transform 0.2s ease-in-out, background 0.3s;
 }
 
@@ -39,6 +39,16 @@ button:hover {
 
 @media (max-width: 768px) {
     nav {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    button {
         font-size: 0.8rem;
+        padding: 6px 10px;
     }
 }

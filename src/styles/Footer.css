@@ -1,6 +1,6 @@
 footer {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     left: 0;
     bottom: 10px;
     text-align: center;
@@ -39,6 +39,6 @@ footer {
         bottom: 0;
         margin-top: 2rem;
         max-height: 1rem;
-        width: 100%;
+        width: 100vw;
     }
 }
