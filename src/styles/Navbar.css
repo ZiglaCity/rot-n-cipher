@@ -36,3 +36,9 @@ button:hover {
     transform: scale(1.05);
     background: var(--button-hover);
 }
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 0.8rem;
+    }
+}
