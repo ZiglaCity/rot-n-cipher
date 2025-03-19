@@ -9,7 +9,7 @@ A modern web-based ROT-N cipher tool for **encrypting and decrypting messages**.
 - ✅ **Dark Mode** for a sleek, hacker-style experience.
 - ✅ **Live Preview** of encrypted/decrypted text.
 - ✅ **Copy & Cut Buttons** for quick message handling.
-  - ✅ **Fully Responsive UI** with modern animations.
+- ✅ **Fully Responsive UI** with modern animations.
 
 ## 🛠️ Tech Stack
 
@@ -17,8 +17,8 @@ A modern web-based ROT-N cipher tool for **encrypting and decrypting messages**.
 - **Styling**: CSS
 - **Deployment**: GitHub Pages / Vercel / Netlify
 
-## 📸 Preview
-Visit the site for a preview....
+## 🌐 Live Demo  
+🔗 [ROT-N Cipher Tool](https://ziglacity.github.io/rot-n-cipher/)
 
 ## 🚀 Usage
 
